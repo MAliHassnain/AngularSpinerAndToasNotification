@@ -1,0 +1,11 @@
+<h1>Hello {{title}}</h1>
+<div>
+  <button [disabled]="loading" (click)="loaderTest()">Loader Test</button>
+  <button (click)="showSuccess()">Show Success</button>
+  <button (click)="showError()">Show Error</button>
+
+</div>
+
+<div *ngIf="loading" class="loading-overlay">
+  <img src="assets/images/loading.svg" alt="Loading..." class="loading-spinner">
+</div>
